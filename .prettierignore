@@ -1,0 +1,5 @@
+# Ignore since running yarn add package will rewrite it
+package.json
+
+# Ignore generated dist folder
+dist
