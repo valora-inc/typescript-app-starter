@@ -22,7 +22,9 @@ Or using [GitHub CLI](https://cli.github.com/):
 ```sh
 gh repo create --template valora-inc/typescript-starter valora-inc/new-repo
 ```
-
+### Set up Codecov
+- Get a token for the repo following instructions [here](https://docs.codecov.com/docs#step-2-get-the-repository-upload-token)
+- Add `CODECOV_TOKEN` to the repo secrets following instructions [here](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-a-repository)
 ## Structure
 
 Here's the recommended structure:
