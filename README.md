@@ -1,4 +1,4 @@
-# typescript-starter
+# typescript-app-starter
 
 A starter template for Valora TypeScript projects with best practices.
 
@@ -22,9 +22,12 @@ Or using [GitHub CLI](https://cli.github.com/):
 ```sh
 gh repo create --template valora-inc/typescript-starter valora-inc/new-repo
 ```
+
 ### Set up Codecov
-- Get a token for the repo following instructions [here](https://docs.codecov.com/docs#step-2-get-the-repository-upload-token)
-- Add `CODECOV_TOKEN` to the repo secrets following instructions [here](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-a-repository)
+
+- Get a token for the repo [following these instructions](https://docs.codecov.com/docs#step-2-get-the-repository-upload-token).
+- Add `CODECOV_TOKEN` to the repo secrets [following these instructions](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-a-repository).
+
 ## Structure
 
 Here's the recommended structure:
@@ -59,4 +62,4 @@ To run external commands we recommend using [ShellJS](https://github.com/shelljs
 
 ## GitHub Actions
 
-We use GitHub Actions for continuous integration and deployment (CI/CD). Anything that gets into the `main` branch will be deployed using `yarn deploy` after running tests/build/etc.
+We use [GitHub Actions](https://docs.github.com/en/actions) for continuous integration and deployment (CI/CD). Anything that gets into the `main` branch will be deployed using `yarn deploy` after running tests/build/etc.
