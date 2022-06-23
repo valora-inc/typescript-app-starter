@@ -20,7 +20,7 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "test:ci": "yarn test --ci --coverage",
-    "check:all": "yarn typecheck && yarn format:check && yarn lint && yarn test",
+    "supercheck": "yarn typecheck && yarn format:check && yarn lint && yarn test",
     "example": "ts-node ./scripts/example.ts",
     "deploy": "echo 'Deployed!'"
   },
