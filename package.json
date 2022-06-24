@@ -1,0 +1,47 @@
+{
+  "name": "typescript-starter",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "repository": "git@github.com:valora-inc/typescript-starter.git",
+  "author": "Valora Inc",
+  "license": "Apache-2.0",
+  "private": true,
+  "engines": {
+    "node": "^16"
+  },
+  "scripts": {
+    "build": "tsc",
+    "build:scripts": "tsc --project scripts/tsconfig.json",
+    "typecheck": "yarn build && yarn build:scripts",
+    "lint": "eslint --ext=.tsx,.ts,.json src/ scripts/",
+    "lint:fix": "yarn lint --fix",
+    "format": "prettier --loglevel error --write .",
+    "format:check": "prettier --check .",
+    "test": "jest",
+    "test:watch": "yarn test --watch",
+    "test:ci": "yarn test --ci --coverage",
+    "supercheck": "yarn format && yarn lint:fix && yarn typecheck && yarn test",
+    "example": "ts-node ./scripts/example.ts",
+    "deploy": "echo 'Deployed!'"
+  },
+  "devDependencies": {
+    "@types/jest": "^28.1.1",
+    "@types/shelljs": "^0.8.11",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@valora/eslint-config-typescript": "^1.0.0",
+    "@valora/prettier-config": "^0.0.1",
+    "eslint": "^8.17.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^26.5.3",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-native": "^4.0.0",
+    "jest": "^28.1.1",
+    "prettier": "^2.7.1",
+    "shelljs": "^0.8.5",
+    "ts-jest": "^28.0.5",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.3"
+  },
+  "prettier": "@valora/prettier-config"
+}
