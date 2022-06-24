@@ -4,7 +4,7 @@
   "main": "dist/index.js",
   "repository": "git@github.com:valora-inc/typescript-starter.git",
   "author": "Valora Inc",
-  "license": "UNLICENSED",
+  "license": "Apache-2.0",
   "private": true,
   "engines": {
     "node": "^16"
