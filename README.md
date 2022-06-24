@@ -20,7 +20,7 @@ Above the file list, click the big green button: `Use this template`.
 Or using [GitHub CLI](https://cli.github.com/):
 
 ```sh
-gh repo create --template valora-inc/typescript-starter valora-inc/new-repo
+gh repo create --template valora-inc/typescript-app-starter valora-inc/new-repo
 ```
 
 ### Set up Codecov
