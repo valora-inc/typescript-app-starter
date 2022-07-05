@@ -6,7 +6,7 @@ A starter template for Valora TypeScript projects with best practices.
 
 - [TypeScript](https://www.typescriptlang.org/)
 - Unit testing with [Jest](https://jestjs.io)
-- Linting with [ESLint](https://eslint.org/), configured with [@valora/eslint-config-typescript](https://github.com/valora-inc/eslin[t-config-typescript)
+- Linting with [ESLint](https://eslint.org/), configured with [@valora/eslint-config-typescript](https://github.com/valora-inc/eslint-config-typescript)
 - Automatic code formating with [Prettier](https://prettier.io/), configured with [@valora/prettier-config](https://github.com/valora-inc/prettier-config)
 - Scripts using [ShellJS](https://github.com/shelljs/shelljs)
   - Linted and statically checked with [TypeScript](https://www.typescriptlang.org/)
