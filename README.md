@@ -12,6 +12,7 @@ A starter template for Valora TypeScript projects with best practices.
   - Linted and statically checked with [TypeScript](https://www.typescriptlang.org/)
 - CI/CD with [GitHub Actions](https://docs.github.com/en/actions)
   - Code coverage uploaded to [Codecov](codecov.io)
+- Automated dependency updates with [Renovate](https://renovatebot.com/), configured with [valora-inc/renovate-config](https://github.com/valora-inc/renovate-config)
 
 ## How to use this?
 
@@ -63,3 +64,7 @@ To run external commands we recommend using [ShellJS](https://github.com/shelljs
 ## GitHub Actions
 
 We use [GitHub Actions](https://docs.github.com/en/actions) for continuous integration and deployment (CI/CD). Anything that gets into the `main` branch will be deployed using `yarn deploy` after running tests/build/etc.
+
+## Renovate
+
+[Renovate](https://renovatebot.com/) ensures our dependencies are kept up to date. It's configured with our shared config in [`renovate.json5`](renovate.json5).
