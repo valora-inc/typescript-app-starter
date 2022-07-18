@@ -868,10 +868,10 @@
     "@typescript-eslint/types" "5.30.5"
     eslint-visitor-keys "^3.3.0"
 
-"@valora/eslint-config-typescript@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@valora/eslint-config-typescript/-/eslint-config-typescript-1.0.0.tgz#1e88c1b5508d7abd3fe2b40dd9462b1cb1d69331"
-  integrity sha512-FOHkxZ92kxhxeuDIVmHiLFQfDYxdYZ646Ix5mKtPuMTGNYwe2Cxs958ug+H/3STeRFV9z2cbebRB/DQNi6pyDw==
+"@valora/eslint-config-typescript@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@valora/eslint-config-typescript/-/eslint-config-typescript-1.0.1.tgz#99524730423f1cd125a94ee50539e3aa3d4b9e7c"
+  integrity sha512-8sF+XoEB/tQXpy5M94Je+R+aL1DGFyGHD/Fn1hz4ZbGvG4gaQnrWa9fsAeQbSqF/Rn93RZKJeEgLQysuIU1wxg==
   dependencies:
     "@typescript-eslint/parser" "^4.25.0"
 
@@ -3314,10 +3314,10 @@ ts-jest@^28.0.5:
     semver "7.x"
     yargs-parser "^21.0.1"
 
-ts-node@^10.8.2:
-  version "10.8.2"
-  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.8.2.tgz#3185b75228cef116bf82ffe8762594f54b2a23f2"
-  integrity sha512-LYdGnoGddf1D6v8REPtIH+5iq/gTDuZqv2/UJUU7tKjuEU8xVZorBM+buCGNjj+pGEud+sOoM4CX3/YzINpENA==
+ts-node@^10.9.1:
+  version "10.9.1"
+  resolved "https://registry.yarnpkg.com/ts-node/-/ts-node-10.9.1.tgz#e73de9102958af9e1f0b168a6ff320e25adcff4b"
+  integrity sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==
   dependencies:
     "@cspotcode/source-map-support" "^0.8.0"
     "@tsconfig/node10" "^1.0.7"
