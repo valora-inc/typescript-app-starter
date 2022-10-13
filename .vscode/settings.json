@@ -1,3 +1,4 @@
 {
+  // Use the project's TypeScript version instead of the bundled one.
   "typescript.tsdk": "node_modules/typescript/lib"
 }
