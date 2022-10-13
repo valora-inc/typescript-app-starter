@@ -8,10 +8,5 @@ module.exports = {
     '^.+\\.(ts|tsx)$': 'ts-jest',
   },
   testPathIgnorePatterns: ['dist'],
-  globals: {
-    'ts-jest': {
-      tsconfig: 'tsconfig.json',
-    },
-  },
   setupFiles: ['<rootDir>/jest.setup.js'],
 }
