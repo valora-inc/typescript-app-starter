@@ -44,6 +44,7 @@ For lower level tests of utilities and individual modules, we use [Jest](https:/
 ## Test coverage checks
 
 ### For private repos
+
 For private repos, Jest can be configured to terminate with an error status if there is less coverage than some configurable threshold.
 This project applies coverage thresholds for `yarn test:ci`, so CI checks will fail if there is insufficient test coverage.
 
@@ -51,11 +52,14 @@ Make sure to add fixture data, mocks, or other files and file paths that you don
 to `coveragePathIgnorePatterns` in `jest.config.js`.
 
 ### For public repos
+
 For public repos, [Codecov](https://codecov.io) is free. The tool offers two nice features that Jest doesn't offer out of the box:
+
 - "auto" coverage targets, which track the current coverage of the `main` branch. This lets you guarantee that test coverage increases over time.
 - "patch" coverage, counting only the lines modified by the current PR
 
 Here's how to set it up:
+
 - Get a token for the repo [following these instructions](https://docs.codecov.com/docs#step-2-get-the-repository-upload-token).
 - Add `CODECOV_TOKEN` to the repo secrets [following these instructions](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-a-repository).
 - Uncomment the `Upload Coverage Report` and `Upload coverage to Codecov` steps in `workflow.yaml`
