@@ -11,7 +11,6 @@ A starter template for Valora TypeScript projects with best practices.
 - Scripts using [ShellJS](https://github.com/shelljs/shelljs)
   - Linted and statically checked with [TypeScript](https://www.typescriptlang.org/)
 - CI/CD with [GitHub Actions](https://docs.github.com/en/actions)
-  - Code coverage uploaded to [Codecov](codecov.io)
 - Automated dependency updates with [Renovate](https://renovatebot.com/), configured with [valora-inc/renovate-config](https://github.com/valora-inc/renovate-config)
 
 ## How to use this?
@@ -23,11 +22,6 @@ Or using [GitHub CLI](https://cli.github.com/):
 ```sh
 gh repo create --template valora-inc/typescript-app-starter valora-inc/new-repo
 ```
-
-### Set up Codecov
-
-- Get a token for the repo [following these instructions](https://docs.codecov.com/docs#step-2-get-the-repository-upload-token).
-- Add `CODECOV_TOKEN` to the repo secrets [following these instructions](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-a-repository).
 
 ## Structure
 
@@ -46,6 +40,32 @@ This project uses [TypeScript](https://www.typescriptlang.org/). It's recommende
 ## Testing
 
 For lower level tests of utilities and individual modules, we use [Jest](https://jestjs.io).
+
+## Test coverage checks
+
+### For private repos
+
+For private repos, Jest can be configured to terminate with an error status if there is less coverage than some configurable threshold.
+This project applies coverage thresholds for `yarn test:ci`, so CI checks will fail if there is insufficient test coverage.
+
+Make sure to add fixture data, mocks, or other files and file paths that you don't want to count towards your coverage thresholds
+to `coveragePathIgnorePatterns` in `jest.config.js`.
+
+### For public repos
+
+For public repos, [Codecov](https://codecov.io) is free. The tool offers two nice features that Jest doesn't offer out of the box:
+
+- "auto" coverage targets, which track the current coverage of the `main` branch. This lets you guarantee that test coverage increases over time.
+- "patch" coverage, counting only the lines modified by the current PR
+
+Here's how to set it up:
+
+- Get a token for the repo [following these instructions](https://docs.codecov.com/docs#step-2-get-the-repository-upload-token).
+- Add `CODECOV_TOKEN` to the repo secrets [following these instructions](https://docs.github.com/en/codespaces/managing-codespaces-for-your-organization/managing-encrypted-secrets-for-your-repository-and-organization-for-codespaces#adding-secrets-for-a-repository).
+- Uncomment the `Upload Coverage Report` and `Upload coverage to Codecov` steps in `workflow.yaml`
+
+If you set up Codecov, you may consider turning off Jest coverage checks for simplicity. You can do this by removing the
+`coverageThreshold` parameter from `jest.config.js`.
 
 ## Linting
 

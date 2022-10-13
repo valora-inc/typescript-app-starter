@@ -9,4 +9,11 @@ module.exports = {
   },
   testPathIgnorePatterns: ['dist'],
   setupFiles: ['<rootDir>/jest.setup.js'],
+  collectCoverageFrom: ['./src/**/*.ts'],
+  coveragePathIgnorePatterns: ['/node_modules/'],
+  coverageThreshold: {
+    global: {
+      lines: 80,
+    },
+  },
 }
