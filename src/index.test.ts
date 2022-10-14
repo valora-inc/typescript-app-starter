@@ -1,4 +1,4 @@
-import { main } from 'src'
+import { main } from './index'
 
 describe(main, () => {
   it("should return 'Hello, world!'", () => {

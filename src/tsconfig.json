@@ -1,0 +1,6 @@
+{
+  // Workaround VS Code only supporting one default tsconfig.json
+  // Otherwise *.test.ts files would show errors in VS Code
+  // See https://stackoverflow.com/questions/57044697/how-to-use-different-tsconfig-file-for-test-files-in-vscode
+  "extends": "../tsconfig.test.json"
+}

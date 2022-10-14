@@ -5,7 +5,7 @@ module.exports = {
   // Allow absolute imports from the tsconfig baseUrl
   moduleDirectories: ['node_modules', '<rootDir>'],
   transform: {
-    '^.+\\.(ts|tsx)$': 'ts-jest',
+    '^.+\\.(ts|tsx)$': ['ts-jest', { tsconfig: 'tsconfig.test.json' }],
   },
   testPathIgnorePatterns: ['dist'],
   setupFiles: ['<rootDir>/jest.setup.js'],
