@@ -11,6 +11,7 @@ A starter template for Valora TypeScript projects with best practices.
 - Scripts using [ShellJS](https://github.com/shelljs/shelljs)
   - Linted and statically checked with [TypeScript](https://www.typescriptlang.org/)
 - CI/CD with [GitHub Actions](https://docs.github.com/en/actions)
+  - Semantic PR title enforcement with [semantic-pull-request](https://github.com/amannn/action-semantic-pull-request)
 - Automated dependency updates with [Renovate](https://renovatebot.com/), configured with [valora-inc/renovate-config](https://github.com/valora-inc/renovate-config)
 
 ## How to use this?
@@ -82,6 +83,8 @@ To run external commands we recommend using [ShellJS](https://github.com/shelljs
 ## GitHub Actions
 
 We use [GitHub Actions](https://docs.github.com/en/actions) for continuous integration and deployment (CI/CD). Anything that gets into the `main` branch will be deployed using `yarn deploy` after running tests/build/etc.
+
+Also, we use [semantic-pull-request](https://github.com/amannn/action-semantic-pull-request) to ensure PR titles match the [Conventional Commits spec](https://www.conventionalcommits.org/). It can be used in combination with [semantic-release](https://github.com/semantic-release/semantic-release) to automate releases and changelogs.
 
 ## Renovate
 
