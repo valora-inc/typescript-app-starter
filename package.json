@@ -27,10 +27,10 @@
   "devDependencies": {
     "@types/jest": "^29.2.4",
     "@types/shelljs": "^0.8.11",
-    "@typescript-eslint/eslint-plugin": "^5.45.0",
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
     "@valora/eslint-config-typescript": "^1.0.1",
     "@valora/prettier-config": "^0.0.1",
-    "eslint": "^8.28.0",
+    "eslint": "^8.29.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jest": "^27.1.6",
     "eslint-plugin-react": "^7.31.11",
