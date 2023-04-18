@@ -34,6 +34,17 @@ jobs:
       - run: yarn typecheck
       - run: yarn format:check
       - run: yarn lint
+  depcheck:
+    name: Depcheck
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+          check-latest: true
+      - run: yarn
+      - run: yarn depcheck
   test:
     name: Test
     runs-on: ubuntu-latest
@@ -56,6 +67,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     needs:
       - lint
+      - depcheck
       - test
     runs-on: ubuntu-latest
     steps:
