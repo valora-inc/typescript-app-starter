@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@types/jest": "^29.5.1",
-    "@types/shelljs": "^0.8.11",
+    "@types/shelljs": "^0.8.12",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@valora/eslint-config-typescript": "^1.0.1",
     "@valora/prettier-config": "^0.0.1",
