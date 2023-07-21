@@ -15,7 +15,7 @@
     "typecheck": "yarn build && yarn build:scripts",
     "lint": "eslint --ext=.tsx,.ts,.json src/ scripts/",
     "lint:fix": "yarn lint --fix",
-    "format": "prettier --loglevel error --write .",
+    "format": "prettier --log-level error --write .",
     "format:check": "prettier --check .",
     "depcheck": "depcheck",
     "test": "jest",
