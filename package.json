@@ -31,7 +31,7 @@
     "@typescript-eslint/eslint-plugin": "^6.5.0",
     "@valora/eslint-config-typescript": "^1.0.2",
     "@valora/prettier-config": "^0.0.1",
-    "depcheck": "^1.4.5",
+    "depcheck": "^1.4.6",
     "eslint": "^8.48.0",
     "eslint-plugin-import": "^2.28.1",
     "eslint-plugin-jest": "^27.2.3",
