@@ -74,10 +74,10 @@ This project uses [ESLint](https://eslint.org/) for linting. That is configured 
 
 We use [Prettier](https://prettier.io) for auto-formatting. It's recommended to install an editor plugin (like the [VSCode Prettier plugin](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)) to get auto-formatting on save. There's also a `yarn format` script you can run to format all files in the project.
 
-## Dependency / Unused Symbol Checking
+## Dependency / Unused Code Checking
 
 This project uses [knip](https://github.com/webpro/knip) for checking both unused dependencies
-and code within the repo. It's configured in [`.knip.json`](.knip.json).
+and code within the repo. This tool can catch a *lot* of stuff, including unused dependencies, functions, types, unnecessary/duplicate exports, unused class/enum members, etc. It's configured in [`.knip.json`](.knip.json).
 
 ## Scripts
 
