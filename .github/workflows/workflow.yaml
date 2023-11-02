@@ -34,8 +34,8 @@ jobs:
       - run: yarn typecheck
       - run: yarn format:check
       - run: yarn lint
-  depcheck:
-    name: Depcheck
+  knip:
+    name: Knip
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -44,7 +44,7 @@ jobs:
           node-version: '18'
           check-latest: true
       - run: yarn
-      - run: yarn depcheck
+      - run: yarn knip
   test:
     name: Test
     runs-on: ubuntu-latest
