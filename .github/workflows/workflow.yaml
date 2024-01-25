@@ -71,6 +71,17 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
+      - uses: google-github-actions/auth@v2
+        with:
+          project_id: celo-mobile-mainnet
+          credentials_json: ${{ secrets.MAINNET_SERVICE_ACCOUNT_KEY }}
+      - name: Fetch Secrets
+        id: slack-webhook
+        uses: google-github-actions/get-secretmanager-secrets@v2.0.0
+        with:
+          # This can point to any slack webhook URL stored in GC Secret Manager
+          secrets: |-
+            SLACK_WEBHOOK_URL:projects/1027349420744/secrets/SLACK_ONCALL_WEBHOOK_URL
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
@@ -78,3 +89,16 @@ jobs:
           check-latest: true
       - run: yarn
       - run: yarn deploy
+      - uses: ravsamhq/notify-slack-action@v2
+        if: always()
+        with:
+          status: ${{ job.status }}
+          notification_title: '{workflow} has {status_message}'
+          message_format: '{emoji} *{workflow}* {status_message}. <{run_url}|View Run>'
+          footer: 'Repo: <{repo_url}|{repo}>'
+          notify_when: 'failure'
+          # Tag @supporthero on failures, can change to any slack group id
+          mention_groups: 'S0277QUM4KB'
+          mention_groups_when: 'failure'
+        env:
+          SLACK_WEBHOOK_URL: ${{ steps.slack-webhook.outputs.SLACK_WEBHOOK_URL }}
