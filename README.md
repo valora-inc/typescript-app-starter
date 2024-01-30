@@ -90,6 +90,8 @@ We use [GitHub Actions](https://docs.github.com/en/actions) for continuous integ
 
 Also, we use [semantic-pull-request](https://github.com/amannn/action-semantic-pull-request) to ensure PR titles match the [Conventional Commits spec](https://www.conventionalcommits.org/). It can be used in combination with [semantic-release](https://github.com/semantic-release/semantic-release) to automate releases and changelogs.
 
+[`workflow.yaml`](.github/workflows/workflow.yaml) contains a step to send slack notifications on deploy failures. For this to work, your repo needs to have access to the [MAINNET_SERVICE_KEY](https://github.com/organizations/valora-inc/settings/secrets/actions/MAINNET_SERVICE_ACCOUNT_KEY) github secret.
+
 ## Renovate
 
 [Renovate](https://renovatebot.com/) ensures our dependencies are kept up to date. It's configured with our shared config in [`renovate.json5`](renovate.json5).

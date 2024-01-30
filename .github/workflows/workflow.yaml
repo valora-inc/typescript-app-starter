@@ -71,6 +71,8 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
+      # Repo needs to be given access to the MAINNET_SERVICE_ACCOUNT_KEY secret to access the slack webhook
+      # https://github.com/organizations/valora-inc/settings/secrets/actions/MAINNET_SERVICE_ACCOUNT_KEY
       - uses: google-github-actions/auth@v2
         with:
           project_id: celo-mobile-mainnet
