@@ -92,6 +92,8 @@ Also, we use [semantic-pull-request](https://github.com/amannn/action-semantic-p
 
 [`workflow.yaml`](.github/workflows/workflow.yaml) contains a step to send slack notifications on deploy failures. For this to work, your repo needs to have access to the [MAINNET_SERVICE_ACCOUNT_KEY](https://github.com/organizations/valora-inc/settings/secrets/actions/MAINNET_SERVICE_ACCOUNT_KEY) github secret.
 
+will this make actions work???
+
 ## Renovate
 
 [Renovate](https://renovatebot.com/) ensures our dependencies are kept up to date. It's configured with our shared config in [`renovate.json5`](renovate.json5).
