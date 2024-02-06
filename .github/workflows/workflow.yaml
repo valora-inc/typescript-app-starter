@@ -79,7 +79,7 @@ jobs:
           credentials_json: ${{ secrets.MAINNET_SERVICE_ACCOUNT_KEY }}
       - name: Fetch Secrets
         id: slack-webhook
-        uses: google-github-actions/get-secretmanager-secrets@v2.0.0
+        uses: google-github-actions/get-secretmanager-secrets@v2.1.0
         with:
           # This can point to any slack webhook URL stored in GC Secret Manager
           secrets: |-
