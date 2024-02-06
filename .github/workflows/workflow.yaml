@@ -67,7 +67,7 @@ jobs:
     if: github.ref == 'refs/heads/main'
     needs:
       - lint
-      - depcheck
+      - knip
       - test
     runs-on: ubuntu-latest
     steps:

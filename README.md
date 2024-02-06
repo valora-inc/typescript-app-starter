@@ -76,7 +76,7 @@ We use [Prettier](https://prettier.io) for auto-formatting. It's recommended to 
 
 ## Dependency / Unused Code Checking
 
-This project uses [knip](https://github.com/webpro/knip) for checking both unused dependencies and code within the repo. This tool can catch a *lot* of stuff, including unused dependencies, functions, types, unnecessary/duplicate exports, unused class/enum members, etc. It's configured in [`.knip.json`](.knip.json).
+This project uses [knip](https://github.com/webpro/knip) for checking both unused dependencies and code within the repo. This tool can catch a _lot_ of stuff, including unused dependencies, functions, types, unnecessary/duplicate exports, unused class/enum members, etc. It's configured in [`.knip.json`](.knip.json).
 
 ## Scripts
 
