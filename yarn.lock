@@ -3346,10 +3346,10 @@ kleur@^3.0.3:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
-knip@^5.0.1:
-  version "5.0.1"
-  resolved "https://registry.yarnpkg.com/knip/-/knip-5.0.1.tgz#8967bf4ba179f2c3227e87610ca9a73dd97212f4"
-  integrity sha512-rvZbe2JIpx+3i+ZC3XpLpKPp6oII9f5w1MOMsXwS1JnuYVuNd4R2i4eon2hFds9a+pf8F10DC1Gvt1W8SIBw3A==
+knip@^5.0.2:
+  version "5.0.2"
+  resolved "https://registry.yarnpkg.com/knip/-/knip-5.0.2.tgz#56c8dc315c53095789192a17b95e4444981e098a"
+  integrity sha512-ylmXi/CaR1rjOl8KqLsei7075cCsHttMNFwoYlBM7WMvd2Rd4oOfic9KqJFkDONXedsEsiiwnI3+u6GT6KOUuw==
   dependencies:
     "@ericcornelissen/bash-parser" "0.5.2"
     "@nodelib/fs.walk" "2.0.0"
@@ -3373,7 +3373,7 @@ knip@^5.0.1:
     strip-json-comments "5.0.1"
     summary "2.1.0"
     zod "3.22.4"
-    zod-validation-error "3.0.0"
+    zod-validation-error "3.0.2"
 
 leven@^3.1.0:
   version "3.1.0"
@@ -4862,10 +4862,10 @@ yocto-queue@^0.1.0:
   resolved "https://registry.yarnpkg.com/yocto-queue/-/yocto-queue-0.1.0.tgz#0294eb3dee05028d31ee1a5fa2c556a6aaf10a1b"
   integrity sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==
 
-zod-validation-error@3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/zod-validation-error/-/zod-validation-error-3.0.0.tgz#69dee45a03ccf9739456bddb50b4d27f121c6f45"
-  integrity sha512-x+agsJJG9rvC7axF0xqTEdZhJkLHyIZkdOAWDJSmwGPzxNHMHwtU6w2yDOAAP6yuSfTAUhAMJRBfhVGY64ySEQ==
+zod-validation-error@3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/zod-validation-error/-/zod-validation-error-3.0.2.tgz#35a0f15e998d7fc88a569d50a9c1dbc3fb1abaae"
+  integrity sha512-21xGaDmnU7lJZ4J63n5GXWqi+rTzGy3gDHbuZ1jP6xrK/DEQGyOqs/xW7eH96tIfCOYm+ecCuT0bfajBRKEVUw==
 
 zod@3.22.4:
   version "3.22.4"
