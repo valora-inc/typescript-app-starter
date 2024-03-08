@@ -28,7 +28,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version-file: 'package.json'
           check-latest: true
       - run: yarn
       - run: yarn typecheck
@@ -41,7 +41,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version-file: 'package.json'
           check-latest: true
       - run: yarn
       - run: yarn knip
@@ -52,7 +52,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version-file: 'package.json'
           check-latest: true
       - run: yarn
       - run: yarn test:ci
@@ -87,7 +87,7 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: '18'
+          node-version-file: 'package.json'
           check-latest: true
       - run: yarn
       - run: yarn deploy
