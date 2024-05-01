@@ -1,5 +1,5 @@
 {
   "entry": ["src/index.ts"],
-  "project": ["src/**/*/.ts"],
+  "project": ["src/**/*.ts"],
   "ignoreDependencies": ["@types/jest", "@valora/prettier-config"]
 }
