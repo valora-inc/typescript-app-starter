@@ -43,7 +43,7 @@
     "shelljs": "^0.8.5",
     "ts-jest": "^29.1.5",
     "ts-node": "^10.9.2",
-    "typescript": "^5.4.5"
+    "typescript": "^5.5.2"
   },
   "prettier": "@valora/prettier-config"
 }
