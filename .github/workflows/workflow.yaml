@@ -71,6 +71,11 @@ jobs:
       - test
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version-file: 'package.json'
+          check-latest: true
       # Repo needs to be given access to the MAINNET_SERVICE_ACCOUNT_KEY secret to access the slack webhook
       # https://github.com/organizations/valora-inc/settings/secrets/actions/MAINNET_SERVICE_ACCOUNT_KEY
       - uses: google-github-actions/auth@v2
@@ -84,11 +89,6 @@ jobs:
           # This can point to any slack webhook URL stored in GC Secret Manager
           secrets: |-
             SLACK_WEBHOOK_URL:projects/1027349420744/secrets/SLACK_ONCALL_WEBHOOK_URL
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: 'package.json'
-          check-latest: true
       - run: yarn
       - run: yarn deploy
       - uses: ravsamhq/notify-slack-action@v2
